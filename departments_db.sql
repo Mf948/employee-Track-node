@@ -1,29 +1,19 @@
 
-DROP DATABASE IF EXISTS employee_db;
-
-CREATE DATABASE employee_db;
-
-USE employee_db;
-
-CREATE TABLE employee(
-    id INTEGER(5) AUTO_ICREMENT NOT NULL,
-    first_name VARCHAR(30),
-    last_name VARCHAR(30),
-    role_id INTEGER(5),
-    manager_id INTEGER(5)
+-- drop the database if it exists currently --
+DROP DATABASE IF EXISTS deparments_db;
+-- Creates the 'deparments_db' database --
+CREATE DATABASE deparments_db;
+-- make it so all the following code will afffect 'deparments_db' --
+Use deparments_db;
+-- creates new rows containing data in all named collums --
+CREATE TABLE deparments(
+    id  INTEGER(2) AUTO_INCREMENT NOT NULL,
+    name VARCHAR(30),
+    PRIMARY KEY(id)
 )
 
-INSERT INTO employee(first_name,last_name,role_id,manager_id)
-VALUES ('Steve','Lawern',23,32)
+-- Creates new rows containing data --
+INSERT INTO deparments(name)
+VALUES("Accounting");
 
-INSERT INTO employee(first_name,last_name,role_id,manager_id)
-VALUES ('carlos','parker',22,33)
-
-INSERT INTO employee(first_name,last_name,role_id,manager_id)
-VALUES ('daniel','hervas',15,34)
-
-INSERT INTO employee(first_name,last_name,role_id,manager_id)
-VALUES ('Sam','warret',16,35)
-
-
-SELECT * FROM employee;
+SELECT * FROM role;
