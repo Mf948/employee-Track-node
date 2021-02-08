@@ -14,11 +14,19 @@ CREATE TABLE role (
 -- Creates new rows containing data in all named columns --
 INSERT INTO role (title,salary)
 VALUES ("WEB DEV",73000);
+VALUES ("WEB DEV",73000);
+VALUES ("WEB DEV",73000);
+VALUES ("WEB DEV",73000);
+VALUES ("WEB DEV",73000);
+VALUES ("WEB DEV",73000);
+VALUES ("WEB DEV",73000);
+VALUES ("WEB DEV",73000);
+VALUES ("WEB DEV",73000);
 
 -- Updates the row where the column name is peter --
-UPDATE role
-SET has_pet = true, pet_name = "Franklin", pet_age = 2
-WHERE id = 4;
+--UPDATE role--
+--SET has_pet = true, pet_name = "Franklin", pet_age = 2
+--WHERE id = 4;--
 
 
 SELECT * FROM role;

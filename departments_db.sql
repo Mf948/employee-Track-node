@@ -14,6 +14,6 @@ CREATE TABLE deparments(
 
 -- Creates new rows containing data --
 INSERT INTO deparments(name)
-VALUES("Accounting");
+VALUES("Accounting")
 
 SELECT * FROM role;

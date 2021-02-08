@@ -15,16 +15,10 @@ CREATE TABLE employee(
 )
 
 INSERT INTO employee(first_name,last_name,role_id,manager_id)
-VALUES ('Steve','Lawern',23,32)
+VALUES ('Steve','Lawern',23,32),('carlos','parker',22,33),('daniel','molton',15,34),
+('Sam','warret',16,35),('Sam','warret',16,35),('Sam','warret',16,35),('Sam','warret',16,35),
+('Sam','warret',16,35),('Sam','warret',16,35)
 
-INSERT INTO employee(first_name,last_name,role_id,manager_id)
-VALUES ('carlos','parker',22,33)
-
-INSERT INTO employee(first_name,last_name,role_id,manager_id)
-VALUES ('daniel','hervas',15,34)
-
-INSERT INTO employee(first_name,last_name,role_id,manager_id)
-VALUES ('Sam','warret',16,35)
 
 
 SELECT * FROM employee;

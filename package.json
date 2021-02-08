@@ -1,5 +1,5 @@
 {
-  "name": "employee-Track-node",
+  "name": "employee-track-node",
   "description": "### Description",
   "version": "1.0.0",
   "main": "departmentsDBConnection.js",
@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Mf948/employee-Track-node/issues"
   },
-  "homepage": "https://github.com/Mf948/employee-Track-node#readme"
+  "homepage": "https://github.com/Mf948/employee-Track-node#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1"
+  }
 }
