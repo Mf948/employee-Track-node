@@ -1,0 +1,20 @@
+{
+  "name": "employee-Track-node",
+  "description": "### Description",
+  "version": "1.0.0",
+  "main": "departmentsDBConnection.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mf948/employee-Track-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mf948/employee-Track-node/issues"
+  },
+  "homepage": "https://github.com/Mf948/employee-Track-node#readme"
+}
