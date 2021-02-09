@@ -15,7 +15,7 @@ const connection = mysql.createConnection({
   password: 'Xferreira948',
 
   // Name of database
-  database: 'deparmentSD',
+  database: 'employee_db',
 });
 
 connection.connect((err) => {
