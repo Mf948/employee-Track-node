@@ -21,8 +21,9 @@ const connection = mysql.createConnection({
 
 connection.connect((err) => {
   if (err) throw err;
-  start()
+
   console.log('connected as id ' + connection.threadId);
+  start()
   //connection.end();
 });
 
@@ -32,7 +33,7 @@ const inquirer = require('inquirer')
 function start(){inquirer.prompt([
 
     {
-        type: 'checkbox',
+        type: 'list',
         message: "What would you like to do ?",
         name: 'stack',
         choices: ['View all employees', 'View all Employees by Department',
@@ -40,7 +41,8 @@ function start(){inquirer.prompt([
             'Update Employee Role', 'Update Employee Manager',"exit"],
     }
 ]).then(function (answer) {
-    switch (answer.action) {
+    console.log(answer)
+    switch (answer.stack) {
         case "View all employees":
             viewEmployees();
             break;
@@ -76,7 +78,12 @@ function start(){inquirer.prompt([
 
 
 function viewEmployees() {
-    var query ="SELECT * FROM employee_db.employee"
+    console.log('hit View')
+    var query ="SELECT * FROM employee_db.employee,deparments,role"
+    connection.query(query,function(err,res){
+        if (err) throw err;
+        console.table(res)
+    })
 }
 
 
@@ -88,7 +95,19 @@ function employeesByManager() {
 
 }
 
-function addEmployee() {
+function addEmployee() {inquirer.prompt([
+
+        {
+            type: 'input',
+            name: 'EmployeName',
+            message: " Insert employee First  Name ?"
+        },
+        {
+            type: 'input',
+            name: 'EmployeeLastName',
+            message: " Insert employee First  Name ?"
+        }
+    ])
 
 }
 
